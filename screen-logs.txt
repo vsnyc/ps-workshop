@@ -1,0 +1,80 @@
+ _            _             _   
+| |_ __ _ ___| | _____ __ _| |_ 
+| __/ _` / __| |/ / __/ _` | __|
+| || (_| \__ \   < (_| (_| | |_ 
+ \__\__,_|___/_|\_\___\__,_|\__|
+                                
+
+
+version 0.9.35
+Not in terminal, reprint now using normal build-in print function.
+
+[WARN   ] : ---
+[WARN   ] : Linting detected issues in: /home/ec2-user/environment/ps-workshop/templates/main.template.yaml
+[WARN   ] :     line 118 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/BastionStack/Properties/Parameters/PublicSubne
+                                                                             t1ID/Fn::GetAtt
+[WARN   ] :     line 118 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/BastionStack/Properties/Parameters/PublicSubne
+                                                                             t2ID/Fn::GetAtt
+[WARN   ] :     line 118 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/BastionStack/Properties/Parameters/VPCID/Fn::G
+                                                                             etAtt
+[WARN   ] :     line 151 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/PrivateSub
+                                                                             net1ID/Fn::GetAtt
+[WARN   ] :     line 151 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/PrivateSub
+                                                                             net2ID/Fn::GetAtt
+[WARN   ] :     line 151 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/PublicSubn
+                                                                             et1ID/Fn::GetAtt
+[WARN   ] :     line 151 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/PublicSubn
+                                                                             et2ID/Fn::GetAtt
+[WARN   ] :     line 151 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/VPCID/Fn::
+                                                                             GetAtt
+[WARN   ] :     line 151 [3005] [Check obsolete DependsOn configuration for Resources] Obsolete DependsOn on resource (VPCStack),
+                                                                             dependency already enforced by a "Fn:GetAtt" at Reso
+                                                                             urces/WorkloadStack/Properties/Parameters/VPCCIDR/Fn
+                                                                             ::GetAtt
+[WARN   ] : ---
+[WARN   ] : Linting detected issues in: /home/ec2-user/environment/ps-workshop/templates/workload.template.yaml
+[WARN   ] :     line 73 [2001] [Check if Parameters are Used] Parameter PrivateSubnet1ID not used.
+[WARN   ] :     line 76 [2001] [Check if Parameters are Used] Parameter PrivateSubnet2ID not used.
+[WARN   ] :     line 88 [2001] [Check if Parameters are Used] Parameter VPCCIDR not used.
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/screen-logs.txt
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/templates/workshop.template.yaml
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/templates/main.template.yaml
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/templates/workload.template.yaml
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-aws-vpc/CODEOWNERS
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-aws-vpc/LICENSE.txt
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-aws-vpc/NOTICE.txt
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-aws-vpc/manifests/app-manager/app-manager-manifest.yaml
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-aws-vpc/templates/aws-vpc.template.yaml
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-linux-bastion/CODEOWNERS
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-linux-bastion/LICENSE.txt
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-linux-bastion/NOTICE.txt
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-linux-bastion/manifests/app-manager/app-manager-manifest.yaml
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-linux-bastion/scripts/auditing_configure.sh
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-linux-bastion/scripts/banner_message.txt
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-linux-bastion/scripts/bastion_bootstrap.sh
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-linux-bastion/scripts/cfn-tools.sh
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-linux-bastion/templates/linux-bastion-entrypoint-existing-vpc.template.yaml
+[S3: -> ] s3://tcat-81711db59a4255ec89cd21542d409e97-eu-central-1/ps-workshop/submodules/quickstart-linux-bastion/templates/linux-bastion-entrypoint-new-vpc.template.yaml
+         ┏ stack Ⓜ tCaT-default-1458cb
+         ┣ region: eu-central-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-default-1458cb
+         ┣ stack Ⓝ tCaT-default-1458cb-VPCStack-17N50ADI2YD33
+         ┣ region: eu-central-1
+         ┗ status: CREATE_IN_PROGRESS
